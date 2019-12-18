@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Nobile&display=swap');
+
+
+body{
+    margin: 0;
+    height: 100vh;
+    background: #000000;
+    font-family: 'Nobile';
+    position: relative;
+}
+
+*, *:before, *:before {
+    box-sizing: border-box;
+
+}
+.container{
+    padding: 2em;
+    height: 100vh;
+
+
+    & :first-child {
+        display: flex;
+        grid-template-rows: 10% 30% auto;
+    }
+
+
+    h1{
+        text-align: center;
+        margin-top: .5em;
+        font-weight: normal;
+        font-size: 3em;
+        line-height: 0.9em;
+        color: white;
+        mix-blend-mode: exclusion;
+    }
+    p{
+        line-height: 1.5em;
+        color: rgb(255, 255, 255);
+        mix-blend-mode: difference;
+
+    }
+    .line{
+        align-self: end;
+        width: 50%;
+        border-right: 1px solid rgb(211, 12, 12);
+        height: 60%;
+        margin-bottom: 4em;
+        position: relative;
+
+        &::after {
+            content: ' ';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 12px 12px 0 12px;
+            border-color: rgb(235, 15, 15) transparent transparent transparent;
+            right: -.7em;
+            bottom: -2px;
+        }
+    }
+}
+
+header{
+    justify-content: space-between;
+}
+.logo{
+    height: 50px;
+    width: 100px;
+    color: rgb(102, 102, 102);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    
+}
+
+h2{
+    color: white;
+    font-size: 3em;
+    margin: 0;
+    font-weight: normal;
+}
+.subtext{
+    margin-top: 0;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    mix-blend-mode: difference;
+}
+
+.secondary{
+    margin-top: -3em;
+
+}
+
+.metallica, .ozzy, .robert{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+.ozzy{
+    top: 40%;
+}
+.metallica{
+    top: 115%;
+    left:  20%;
+}
+.robert{
+    top: 160%;
+    width: 70%;
+}
+@media only screen and (min-width:930px){
+    
+    .metallica{
+        top: -30%;
+    }
+}
+
+@media only screen and (min-width:1050px){
+    .nirvana{
+        top: -60%;
+    }
+    .metallica{
+        top: -40%;
+    }
+}

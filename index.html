@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="#" class="logo">Rock'n Roll</a>
+
+            <nav>
+                <img src="./img/Vector.svg" alt="menu" class="menu">
+            </nav>
+        </header>
+        <h1 class="lax" data-lax-translate-y="0 0, 700 250">Rock'n Roll</h1>
+
+        <div class="line lax" data-lax-opacity= "0 1, 100 0">
+
+        </div>
+    </div>
+    <div class="container secondary lax" data-lax-translate-y="0 0, 400 -600" data-lax-opacity="0 0, 210 1, 350 0">
+        <h2>METALLICA</h2>
+       <p class="subtext">the history</p>
+       <p>influential American heavy metal band that, along with
+            Slayer and Anthrax, developed the subgenre speed metal
+             in the early and mid-1980s. The principal members were
+              lead singer and rhythm guitarist James Hetfield 
+              (b. August 3, 1963, Downey, California, U.S.), 
+              drummer Lars Ulrich (b. December 26, 1963, Gentofte, Denmark), 
+              lead guitarist Kirk Hammett (b. November 18, 1962, San Francisco, 
+              California), and bassist Cliff Burton 
+              (b. February 10, 1962, San Francisco—d. September 27, 1986,
+               near Stockholm, Sweden). Jason Newsted 
+               (b. March 4, 1963, Battle Creek, Michigan) 
+               took over on bass after Burton was 
+           killed in a tour bus accident. </p>
+    </div>
+    <div class="container secondary lax" data-lax-translate-y="0 0, 400 -400" data-lax-opacity="0 0, 610 1, 1500 0">
+            <h2>METALLICA</h2>
+           <p class="subtext">the history</p>
+           <p>In January 2001 Newsted left the group, leaving 
+               Metallica without a bassist once again. Work on 
+               a new album was delayed while the band sought a
+                replacement for Newsted, and Hetfield entered treatment 
+                for alcoholism. Bob Rock, who had produced the band since 1991,
+                 filled in on bass as Metallica entered the studio to record
+                  St. Anger (2003). True to its title, the album was a rage-fueled
+                   exploration of Hetfield’s psyche that confirmed to listeners 
+                   that sobriety had not dulled the singer’s edge. Metallica added
+                    Robert Trujillo, former bassist for Ozzy Osbourne and skate-punk 
+                    band Suicidal Tendencies, to the band’s lineup prior to
+                embarking on the St. Anger tour. </p>
+        </div>
+    
+   
+    <img src="./img/81-810186_video-cannot-be-played-james-hetfield.png" 
+    alt="metallica" class="metallica lax" data-lax-opacity="0 0, 200 1, 400 0" data-lax-translate-y= "0 1, 400 -295" >
+    <img src="./img/58623cc931349e0568ad89c1.png" alt="ozzy" class="ozzy lax" data-lax-opacity="0 1, (document.body.scrollHeight*0.1) 0" data-lax-scale = "10 1,2000 10 ">
+    <img src="./img/81-810304_robert-trujillo-black-and-white.png" alt="robret" class="robert lax" data-lax-opacity="0 0, 700 1, 200 0" data-lax-translate-x= "0 1, 600 200">
+
+    <script src="./lax.min.js"></script>
+    <script>
+
+    window.onload = function() {
+	    lax.setup() // init
+
+	    const updateLax = () => {
+		    lax.update(window.scrollY)
+		    window.requestAnimationFrame(updateLax)
+	}
+
+	window.requestAnimationFrame(updateLax)
+}  
+    </script>
+</body>
+</html>
